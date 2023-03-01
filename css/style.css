@@ -1,0 +1,36 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: grid;
+    grid-template-areas: "aside main";
+    grid-template-rows: 25% 75%;
+}
+
+aside{
+    background-color: #FFF;
+    grid-area: aside;
+}
+
+div.profile, div.aside-links{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: .3125rem;
+}
+
+div.profile img{
+    border-radius: 50%;
+}
+
+div.profile h3{
+    color: #595D68;
+}
+
+div.profile p{
+    color: #CDCED0;
+}

@@ -1,21 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
 body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
 }
 
 body{
     display: grid;
-    grid-template-areas: "aside main";
-    grid-template-rows: 25% 75%;
+    grid-template-columns: 25% 75%;
 }
 
 aside{
+    height: 100vh;
     background-color: #FFF;
-    grid-area: aside;
+    padding: .5rem .875rem;
+    position:relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-div.profile, div.aside-links{
+div.profile{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -25,12 +32,54 @@ div.profile, div.aside-links{
 
 div.profile img{
     border-radius: 50%;
+    width: 40%;
+    object-fit: contain;
 }
 
-div.profile h3{
+div.profile h3, div.aside-links a{
     color: #595D68;
 }
 
-div.profile p{
+div.profile p, div.aside-links p{
     color: #CDCED0;
+}
+
+div.aside-links{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: .75rem;
+}
+
+div.aside-links a{
+    text-decoration: none;
+   text-transform: capitalize;
+}
+
+div.aside-links a:hover{
+    color: #97A8D4;
+}
+
+div.aside-links i {
+    margin-right: .5rem;
+}
+
+div.aside-links p{
+    text-transform: uppercase;
+}
+
+div.device {
+    position:absolute;
+    bottom: 0;
+    background-color: #E9EBF7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .625rem;
+    border-radius: .875rem;
+    margin: 0 1.875rem;
+}
+
+div.device img{
+    width: 20%;
 }

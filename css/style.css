@@ -31,9 +31,9 @@ div.profile{
 }
 
 div.profile img{
+    height: 100px;
+    width: 100px;
     border-radius: 50%;
-    width: 40%;
-    object-fit: contain;
 }
 
 div.profile h3, div.aside-links a{

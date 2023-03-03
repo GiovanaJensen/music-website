@@ -12,6 +12,8 @@ body{
     grid-template-columns: 25% 75%;
 }
 
+/* aside */
+
 aside{
     height: 100vh;
     background-color: #FFF;
@@ -82,4 +84,44 @@ div.device {
 
 div.device img{
     width: 20%;
+}
+
+/* main */
+
+/* nav */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .75rem 1.25rem;
+}
+
+nav form{
+    border-radius: .9375rem;
+    border: 1px solid #CDCED0;
+    padding: .25rem .5rem;
+}
+
+nav form input{
+    border: none;
+    outline: none;
+}
+
+nav form input, nav form input::placeholder, nav i {
+    color: #CDCED0;
+}
+
+nav div{
+    display: flex;
+    gap: .625rem;
+    align-items: center;
+}
+
+nav div a {
+    background: linear-gradient(to right, #F60D35, #D94255, #F36981);
+    border-radius: .9375rem;
+    padding: .25rem .5rem;
+    text-decoration: none;
+    color: #fff;
 }

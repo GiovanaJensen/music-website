@@ -7,7 +7,6 @@ body{
     font-family: 'Montserrat', sans-serif;
     display: grid;
     grid-template-columns: 25% 75%;
-    overflow-x: hidden;
 }
 
 
@@ -135,10 +134,16 @@ section.top-albums .title, section.top-albums .cards{
 
 section.top-albums{
     padding: .875rem 1.125rem;
+    width: auto;
+}
+
+section.top-albums .title i {
+    cursor: pointer;
 }
 
 section.top-albums .cards{
     gap: .625rem;
+    overflow: hidden;
 }
 
 section.top-albums .cards .album img{
